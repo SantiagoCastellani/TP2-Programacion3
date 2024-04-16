@@ -18,8 +18,7 @@ namespace TP2_GRUPO_5
         {
             if (txtUsuario.Text == "claudio" & txtPassword.Text == "casas")
             {
-                string usuario = ((TextBox)PreviousPage.FindControl("txtUsuario")).Text;
-                Session["Usuario"] = usuario;
+                Session["Usuario"] = txtUsuario.Text;
                 Response.Redirect("ejercicio4b.aspx");
             }
             else
